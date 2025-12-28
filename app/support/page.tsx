@@ -74,9 +74,9 @@ function formatPriorityForDisplay(priority: string): string {
 
 // Helper function to get priority from ticket (from priority field or inferred from status)
 function getPriority(ticket: Ticket & { priority?: string }): string {
-    // Use priority field if available
-    if (ticket.priority) {
-        return ticket.priority.toUpperCase()
+    // Use prioritaet field if available (database field name is prioritaet)
+    if (ticket.prioritaet) {
+        return ticket.prioritaet.toUpperCase()
     }
     // Fallback: infer from status
     const status = ticket.status?.toLowerCase().replace(/_/g, ' ') || ''
