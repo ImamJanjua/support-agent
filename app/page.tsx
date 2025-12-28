@@ -5,7 +5,7 @@ import { Field, FieldContent, FieldDescription, FieldError, FieldGroup, FieldLab
 import { Input } from '@/components/ui/input'
 import { Button } from '@/components/ui/button'
 import { toast } from 'sonner'
-import { MessageSquare, Send, CheckCircle2 } from 'lucide-react'
+import { HeadphonesIcon, Send, CheckCircle2 } from 'lucide-react'
 import { useRouter } from 'next/navigation'
 import supabase from '@/lib/supabase'
 
@@ -153,7 +153,7 @@ const Page = () => {
       <div className="text-center mb-8">
         <div className="flex justify-center mb-4">
           <div className="rounded-full bg-primary/10 p-3">
-            <MessageSquare className="size-8 text-primary" />
+            <HeadphonesIcon className="size-8 text-primary" />
           </div>
         </div>
         <h1 className="text-4xl font-bold tracking-tight mb-3">Support kontaktieren</h1>
